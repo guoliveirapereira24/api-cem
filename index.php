@@ -13,4 +13,8 @@ echo '<pre>';
 var_dump($dados);
 echo '</pre>';
 
+//AEEEE CABOOOO
+//FINALMENTEEEEE
+//SÓ 6 HORAS DE DOR TRISTEZA E SOFRIMENTO
+//SÓ NÉ
 ?>
