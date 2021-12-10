@@ -17,7 +17,7 @@ class ControllerProduto
 
         // var_dump($dadosProduto);exit;
 
-        $this->_idProduto = $dadosProduto->idProduto ?? null;
+        $this->_idProduto = $dadosProduto->idProduto ?? $_POST["idProduto"];
 
         // var_dump($this->_idProduto);exit;
     }
@@ -35,13 +35,14 @@ class ControllerProduto
 
             case 'POST':
 
-                return $this->_modelProduto->create();
+                if ($this->_idProduto) {
+                    return $this->_modelProduto->update();
+                    break;
+                } else {
+                    return $this->_modelProduto->create();
+                    break;
+                }
 
-                break;
-
-            case 'PUT':
-
-                return $this->_modelProduto->update();
 
                 break;
 

@@ -5,7 +5,8 @@ class Connection{
     private $_dbHostName = "localhost";
     private $_dbName = "dbCem";
     private $_userName = "root";
-    private $_dbPassword = "bcd127";
+    // private $_dbPassword = "bcd127";
+    private $_dbPassword = "Brucilao_3";
     private $_conexao;
 
     public function __construct(){
