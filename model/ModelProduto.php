@@ -29,15 +29,15 @@ class ModelProduto
         // $this->_qtdParcela = $dadosProduto->qtdParcela ?? null;
         
         //POST
-        $this->_idProduto = $_POST['idProduto'] ?? null;
-        $this->_nome = $_POST['nome'] ?? null;
+        // $this->_idProduto = $_POST['idProduto'] ?? null;
+        $this->_nome = $dadosProduto->nome ?? null;
         $this->_descricao = $_POST['descricao'] ?? null;
         $this->_preco = $_POST['preco'] ?? null;
         $this->_imagem = $_POST['imagem'] ?? null;
         $this->_desconto = $_POST['desconto'] ?? null;
         $this->_qtdParcela = $_POST['qtdParcela'] ?? null;
         
-        var_dump($this->_idProduto);exit;
+        var_dump($dadosProduto->nome);exit;
 
 
         $this->_conexao = $conexao;
